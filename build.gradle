@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'qaguru.hw'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:7.0.4",
+            "org.junit.jupiter:junit-jupiter:5.10.1"
+    )
+
+}
+
+test {
+    useJUnitPlatform()
+}
